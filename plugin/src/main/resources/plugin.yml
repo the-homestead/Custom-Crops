@@ -18,6 +18,7 @@ softdepend:
   - ClueScrolls
   - RealisticSeasons
   - AdvancedSeasons
+  - AuraSeasons
   - SlimeWorldManager
   - SlimeWorldPlugin
   - ASPaperPlugin
