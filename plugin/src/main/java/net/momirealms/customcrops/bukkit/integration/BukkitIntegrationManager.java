@@ -29,6 +29,7 @@ import net.momirealms.customcrops.bukkit.integration.quest.BattlePassQuest;
 import net.momirealms.customcrops.bukkit.integration.quest.ClueScrollsQuest;
 import net.momirealms.customcrops.bukkit.integration.region.WorldGuardRegion;
 import net.momirealms.customcrops.bukkit.integration.season.AdvancedSeasonsProvider;
+import net.momirealms.customcrops.bukkit.integration.season.AuraSeasonsProvider;
 import net.momirealms.customcrops.bukkit.integration.season.RealisticSeasonsProvider;
 import net.momirealms.customcrops.bukkit.item.BukkitItemManager;
 import net.momirealms.customcrops.bukkit.world.BukkitWorldManager;
@@ -70,7 +71,10 @@ public class BukkitIntegrationManager implements IntegrationManager {
             registerSeasonProvider(new RealisticSeasonsProvider());
         } else if (isHooked("AdvancedSeasons")) {
             registerSeasonProvider(new AdvancedSeasonsProvider());
+        }else if (isHooked("AuraSeasons")) {
+            registerSeasonProvider(new AuraSeasonsProvider());
         }
+
         if (isHooked("Vault")) {
             VaultHook.init();
         }

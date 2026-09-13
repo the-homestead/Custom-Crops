@@ -34,6 +34,7 @@ dependencies {
     // season
     compileOnly(files("libs/RealisticSeasons-api.jar"))
     compileOnly(files("libs/AdvancedSeasons-API.jar"))
+    compileOnly(files("libs/AuraSeasons-1.1.0.jar"))
     // leveler
     compileOnly(files("libs/mcMMO-api.jar"))
     compileOnly("net.Indyuce:MMOCore-API:1.12.1-SNAPSHOT")
